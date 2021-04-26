@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0;" />
+        <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+        <link href="./assets/chpass.css" rel="stylesheet" />
+    </head>
+
+    <!------ Include the above in your HEAD tag ---------->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 top-sec1">
+                <img data-rjs="2" class="logo-trans logo-reg" src="./assets/verysmall.png" height="75" width="300" alt="DreamPick" />
+                <h1>Change Password</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <p class="text-center">Use the form below to change your password.</p>
+                <form method="post" id="passwordForm">
+                    <input type="password" class="input-lg form-control" name="password1" id="password1" placeholder="New Password" autocomplete="new-password" />
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <span id="8char" class="glyphicon glyphicon-remove dft-color"></span> 8 Characters Long<br />
+                            <span id="ucase" class="glyphicon glyphicon-remove dft-color"></span> One Uppercase Letter
+                        </div>
+                        <div class="col-sm-6">
+                            <span id="lcase" class="glyphicon glyphicon-remove dft-color"></span> One Lowercase Letter<br />
+                            <span id="num" class="glyphicon glyphicon-remove dft-color"></span> One Number
+                        </div>
+                    </div>
+                    <input type="password" class="input-lg form-control" name="password2" id="password2" placeholder="Repeat Password" autocomplete="new-password" />
+                    <div class="row">
+                        <div class="col-sm-12"><span id="pwmatch" class="glyphicon glyphicon-remove dft-color"></span> Passwords Match</div>
+                    </div>
+                    <input type="submit" class="col-xs-12 btn btn-primary btn-load btn-lg" data-loading-text="Changing Password..." value="Change Password" />
+                </form>
+            </div>
+            <!--/col-sm-6-->
+        </div>
+        <!--/row-->
+        <script src="./assets/chpss-script.js"></script>
+    </div>
+</html>
